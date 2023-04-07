@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kenia&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&family=Rubik+Gemstones&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./sass/main.min.css" />
+  </head>
+  <body>
+    <div class="container">
+    <header class="nav-block">
+        <nav class="nav-flex">
+          <a class="nav-logo" href="index.html">WebStudio</a>
+          <ul class="nav-info ">
+            <li class="li-after">
+              <a class="nav__link nav__color" href="index.html">Estudio</a>
+              <div class="div-after"></div>
+            </li>
+            <li>
+              <a class="nav__link" href="portfolio.html">Portafolio</a>
+            </li>
+            <li><a class="nav__link" href="#">Contactos</a></li>
+          </ul>
+        </nav>
+        <ul class="nav-information">
+          <li><a class="nav__contact" href="mailito:info@devstudio.com"><svg class="nav__svg" width="16" height="12"><use href="./img/icoms.svg#icon-sobre"></use></svg >info@devstudio.com</a>
+          </li>
+          <li>
+            <a class="nav__contact" href="tel:+525555296000"><svg class="nav__svg" width="10" height="16"><use href="./img/icoms.svg#icon-Vector"></use></svg>+52 55 5529 6000</a>
+          </li>
+        </ul>
+    </header>
+    </div>
+    <main>
+        <section class="solution  svg-section ">
+          <div class="solution__container">
+          <h1 class="solution__h1">
+            SOLUCIONES EFICACES PARA SU NEGOCIO
+          </h1>
+            <button  class="solution__button" data-modal-open>Solicite nuestro servicio</button>
+          </div>
+          <div class="backdrop  is-hidden backdrop-padding" data-modal>
+            <div class="modal">
+              <button type="button" class="modal__close" data-modal-close=""><svg width="11" height="11"><use href="./img/icoms.svg#icon-close"></use></svg></button>
+              <form class="form" autocomplete="on">
+                <p class="form__data">Deje sus datos, nos contactaremos con usted</p>
+                <div class="form-field">
+                <label for="name">Nombre</label>
+                  <input type="text" name="name" id="name" required maxlength="15" title="este elemento es requerido" placeholder="Escribe tu nombre" class="form__modal form__style">
+                  <svg width="18px" height="18px" class="form__svg"><use href="./img/icoms.svg#icon-nombre" ></use></svg>
+                  </div>
+                  <div class="form-field">
+                  <label for="tel">Telefono</label>
+                  <input type="tel" name="tel" id="tel" placeholder="##########" class="form__modal form__style">
+                  <svg width="18px" height="18px" class="form__svg"><use href="./img/icoms.svg#icon-telefono" ></use></svg>
+                  </div>
+                  <div class="form-field">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com" class="form__modal form__style">
+                  <svg width="18px" height="18px" class="form__svg"><use href="./img/icoms.svg#icon-email" ></use></svg>
+                  </div>
+                  <div class="form-field">
+                  <label for="comment">Comentarios</label>
+                  <textarea name="comment" id="comment"  minlength="3" maxlength="100" rows="6" placeholder="Introdusca el texto" class="form__textarea">
+                  </textarea>
+                  </div>
+                  <div class="form-field-checkbox">
+                <label>
+                  <input type="checkbox" value="accept" class="form__checkbox">
+                  <svg class="form__checkbox__svg" width="16" height="15"><use href="./img/icoms.svg#icon-Vector"></use></svg>
+                  <span class="form__span">Estoy de acuerdo con el voletin informativo y acepto los terminos y condiciones</span>
+                </label>
+                  </div>
+                  <div class="form-button">
+                  <button type="submit" class="form__button" data-modal-open>Enviar</button>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <div class="container">
+        <section>
+          <div class="svg-section">
+            <ul class="features">
+            <li class="features__svg"><svg class="features__tecno" ><use href="./img/icoms.svg#icon-antena"></use></svg></li>
+            <li class="features__svg"><svg class="features__tecno"><use href="./img/icoms.svg#icon-reloj"></use></svg></li>
+            <li class="features__svg"><svg class="features__tecno"><use href="./img/icoms.svg#icon-pc"></use></svg></li>
+            <li class="features__svg"><svg class="features__tecno"><use href="./img/icoms.svg#icon-astronauta"></use></svg></li>
+            </ul>
+          </div>
+          <ul class="details-features">
+            <li class="details__service">
+              <h3>ATENCION A LOS DETALLES</h3>
+              <p class="details__text">
+                Nos adentramos en todos los detalles y procesos de su negocio,
+                para asi desarrollar una solucion a su medida
+              </p>
+            </li>
+            <li class="details__service">
+              <h3>PUNTUALIDAD</h3>
+              <p class="details__text">
+                Con nosotros, usted puede sentirse seguro y protegido. Un
+                principio importante de la empresa: respetar su tiempo y
+                respetar los plazos acordados.
+              </p>
+            </li>
+            <li class="details__service">
+              <h3>PLANIFICACION</h3>
+              <p class="details__text">
+                Usted podra observar y practicar en cada fase del desarrollo y
+                aplicacion de soluciones.
+              </p>
+            </li>
+            <li class="details__service">
+              <h3>TEGNOLOGIA MODERNA</h3>
+              <p class="details__text">
+                Usamos herramientas innovadoras para resolver las tareas
+                asignadas.Es hora de simplificar los procesos laborales.
+              </p>
+            </li>
+          </ul>
+        </section>
+        </div>
+        <section class="section-width">
+        <div class="container">
+          <h2 class="section-h2">A que nos dedicamos</h2>
+          <ul class="picture">
+            <li>
+              <img
+                src="./img/esctiorio.jpg"
+                width="373"
+                alt="person typing on a keyboard"
+              />
+              <div class="absolute">
+                <p class="absolute__text">
+                  APLICACIONES DE ESCRITORIO
+                </p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./img/celular.jpg"
+                width="373"
+                alt="person checking the semantics of a cell phone"
+              />
+              <div class="absolute">
+                <p class="absolute__text">
+                  APLICACIONES MOVILES
+                </p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./img/tablet.jpg"
+                width="373"
+                alt="person editing on a tablet"
+              />
+              <div class="absolute">
+                <p class="absolute__text">
+                  SOLUCIONES DE DISEÑO
+                </p>
+              </div>
+            </li>
+          </ul>
+          </div>
+        </section>
+        </div>
+        <section class="section-width  section-backgraund">
+          <div class="container">
+          <h2 class="section-h2">Nuestro Equipo</h2>
+          <ul class="picture">
+            <li class="equipment">
+              <img
+                src="./img/hombre1.jpg"
+                width="270"
+                alt="Man in brown shirt"
+              />
+              <h3 class="equipment__name">Andres Cubo</h3>
+              <p class="equipment__work">Diseñador de Productos</p>
+              <div class="equipment__icons">
+                <a class="equipment__svg" href=""><svg width="20"
+                height="20"><use href="./img/icoms.svg#icon-instagram"></use></svg></a>
+                <a class="equipment__svg" href=""><svg width="20"
+                height="20"><use href="./img/icoms.svg#icon-twiter"></use></svg></a>
+                <a class="equipment__svg" href=""><svg width="20"
+                height="20"><use href="./img/icoms.svg#icon-facebook"></use></svg></a>
+                <a class="equipment__svg" href=""><svg width="20"
+                height="20"><use href="./img/icoms.svg#icon-linkedin2"></use></svg>
+                </a>
+            </div>
+            </li>
+            <li class="equipment">
+              <img
+                src="./img/mujer.jpg"
+                width="270"
+                alt="woman in blue shirt"
+              />
+              <h3 class="equipment__name">Carla Palacios</h3>
+              <p class="equipment__work">Desarrolladora Frontend</p>
+              <div class="equipment__icons">
+                <a class="equipment__svg" href=""><svg width="20"
+                height="20"><use href="./img/icoms.svg#icon-instagram"></use></svg></a>
+                <a class="equipment__svg" href=""><svg width="20"
+                height="20"><use href="./img/icoms.svg#icon-twiter"></use></svg></a>
+                <a class="equipment__svg" href=""><svg width="20"
+                height="20"><use href="./img/icoms.svg#icon-facebook"></use></svg></a>
+                <a class="equipment__svg" href=""><svg width="20"
+                height="20"><use href="./img/icoms.svg#icon-linkedin2"></use></svg>
+                </a>
+            </div>
+            </li>
+            <li class="equipment">
+              <img
+                src="./img/hombre2.jpg"
+                width="270"
+                alt="man in white shirt"
+              />
+              <h3 class="equipment__name">Mario Dorado</h3>
+              <p class="equipment__work">Marketing</p>
+              <div class="equipment__icons">
+                <a class="equipment__svg" href=""><svg width="20"
+                height="20"><use href="./img/icoms.svg#icon-instagram"></use></svg></a>
+                <a class="equipment__svg" href=""><svg width="20"
+                height="20"><use href="./img/icoms.svg#icon-twiter"></use></svg></a>
+                <a class="equipment__svg" href=""><svg width="20"
+                height="20"><use href="./img/icoms.svg#icon-facebook"></use></svg></a>
+                <a class="equipment__svg" href=""><svg width="20"
+                height="20"><use href="./img/icoms.svg#icon-linkedin2"></use></svg>
+                </a>
+</div>
+            </li>
+            <li class="equipment">
+              <img
+                src="./img/hombre3.jpg"
+                width="270"
+                alt="man in black shirt"
+              />
+              <h3 class="equipment__name">Pablo Mijangos</h3>
+              <p class="equipment__work">Diseñador iu</p>
+              <div class="equipment__icons">
+                <a class="equipment__svg" href=""><svg width="20"
+                height="20"><use href="./img/icoms.svg#icon-instagram"></use></svg></a>
+                <a class="equipment__svg" href=""><svg width="20"
+                height="20"><use href="./img/icoms.svg#icon-twiter"></use></svg></a>
+                <a class="equipment__svg" href=""><svg width="20"
+                height="20"><use href="./img/icoms.svg#icon-facebook"></use></svg></a>
+                <a class="equipment__svg" href=""><svg width="20"
+                height="20"><use href="./img/icoms.svg#icon-linkedin2"></use></svg>
+                </a>
+</div> 
+            </li>
+          </ul>
+          </div>
+        </section>
+        <section> 
+          <div class="container">
+          <h2 class="customers-h2">Clientes Regulares</h2>
+            <ul class="customers">
+          <li  class="customers__svg"><a class="customers__icon" href="#"><svg width="41" height="46"><use href="./img/icoms.svg#icon-cliente1"></use></svg></a></li>
+          <li  class="customers__svg"><a class="customers__icon" href="#"><svg width="40" height="52"><use href="./img/icoms.svg#icon-cliente2"></use></svg></a></li>
+          <li  class="customers__svg"><a  class="customers__icon" href="#"><svg width="43" height="41"><use href="./img/icoms.svg#icon-cliente3"></use></svg></a></li>
+          <li  class="customers__svg"><a  class="customers__icon" href="#"><svg width="84" height="40"><use href="./img/icoms.svg#icon-cliente4"></use></svg></a></li>
+          <li  class="customers__svg"><a  class="customers__icon" href="#"><svg width="62" height="45"><use href="./img/icoms.svg#icon-cliente5"></use></svg></a></li>
+          <li  class="customers__svg"><a  class="customers__icon" href="#"><svg width="93" height="43"><use href="./img/icoms.svg#icon-cliente6"></use></svg></a></li>
+          </ul>  
+          </div>
+        </section>
+    </main>
+    <script src="./js/modal.js"></script>
+    </body>
+    <footer>
+      <div class="container container-footer">
+        <div class="footer-info">
+        <a class="footer-logo" href="index.html">WebStudio</a>
+        <address>
+          <ul class="footer-information">
+            <li>
+              <a class="footer__city" href="#" target="_blank"
+                >Calz. ticoman 500, Ciudad de Mexico, CDMX, Mexico</a
+              >
+            </li>
+            <li>
+              <a class="footer__contact" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li>
+              <a class="footer__contact" href="tel:+ 52 5529 6000"
+                >tel:+ 52 5529 6000</a
+              >
+            </li>
+          </ul>
+        </address>
+        </div>
+        <section class="networks">
+          <h3 class="h3-color">ENCUENTRENOS EN</h3>
+          <ul class="networks-svg">
+          <li class="networks__svg"><a href=""><svg width="20"
+                height="20"><use href="./img/icoms.svg#icon-instagram"></use></svg></a></li>
+<li class="networks__svg"><a href=""><svg width="20"
+                height="20"><use href="./img/icoms.svg#icon-twiter"></use></svg></a></li>
+<li class="networks__svg"><a href=""><svg width="20"
+                height="20"><use href="./img/icoms.svg#icon-facebook"></use></svg></a></li>
+<li class="networks__svg"><a href=""><svg width="20"
+                height="20"><use href="./img/icoms.svg#icon-linkedin2"></use></svg>
+</a></li>
+</ul>
+        </section>
+        <section>
+          <h3 class="h3-color h3-section">SUSCRIBACE AL BOLETIN INFORMATIVO</h3>
+          <div class="bulletin">
+          <iNput class="bulletin__informative" type="email" placeholder="Correo electronico"></iNput>
+          <button class="form__button bulletin__button" type="submit">SUSCRIBACE <svg width="24" heigth="24"><use href="./img/icoms.svg#icon-avion"></use></svg></button>
+          </div>
+        </section>
+        </div>
+    </footer>
+  </body>
+</html>
