@@ -52,7 +52,7 @@
   background-color: rgb(33, 150, 243);
 }
 .nav-block .nav-information {
-  padding: 32px 30px 32px 0;
+  padding: 32px 0 32px 0;
   margin: 0;
   display: flex;
   gap: 50px;

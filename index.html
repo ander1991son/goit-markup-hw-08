@@ -15,13 +15,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./sass/main.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <div class="container">
     <header class="nav-block">
         <nav class="nav-flex">
-          <a class="nav-logo" href="index.html">WebStudio</a>
+          <a class="nav-logo" href="index.html">Web<span class="nav-span">Studio</span></a>
           <ul class="nav-info ">
             <li class="li-after">
               <a class="nav__link nav__color" href="index.html">Estudio</a>
@@ -41,6 +41,12 @@
           </li>
         </ul>
     </header>
+      <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg width="24" height="16"><use href="./img/icoms.svg#icon-menu_24px"></use></svg>
+        </button>
     </div>
     <main>
         <section class="solution  svg-section ">
@@ -91,16 +97,9 @@
         </section>
         <div class="container">
         <section>
-          <div class="svg-section">
-            <ul class="features">
-            <li class="features__svg"><svg class="features__tecno" ><use href="./img/icoms.svg#icon-antena"></use></svg></li>
-            <li class="features__svg"><svg class="features__tecno"><use href="./img/icoms.svg#icon-reloj"></use></svg></li>
-            <li class="features__svg"><svg class="features__tecno"><use href="./img/icoms.svg#icon-pc"></use></svg></li>
-            <li class="features__svg"><svg class="features__tecno"><use href="./img/icoms.svg#icon-astronauta"></use></svg></li>
-            </ul>
-          </div>
           <ul class="details-features">
             <li class="details__service">
+              <div class="features__svg"><svg class="features__tecno" ><use href="./img/icoms.svg#icon-antena"></use></svg></div>
               <h3>ATENCION A LOS DETALLES</h3>
               <p class="details__text">
                 Nos adentramos en todos los detalles y procesos de su negocio,
@@ -108,6 +107,7 @@
               </p>
             </li>
             <li class="details__service">
+              <div class="features__svg"><svg class="features__tecno"><use href="./img/icoms.svg#icon-reloj"></use></svg></div>
               <h3>PUNTUALIDAD</h3>
               <p class="details__text">
                 Con nosotros, usted puede sentirse seguro y protegido. Un
@@ -116,6 +116,7 @@
               </p>
             </li>
             <li class="details__service">
+              <div class="features__svg"><svg class="features__tecno"><use href="./img/icoms.svg#icon-pc"></use></svg></div>
               <h3>PLANIFICACION</h3>
               <p class="details__text">
                 Usted podra observar y practicar en cada fase del desarrollo y
@@ -123,6 +124,7 @@
               </p>
             </li>
             <li class="details__service">
+              <div class="features__svg"><svg class="features__tecno"><use href="./img/icoms.svg#icon-astronauta"></use></svg></div>
               <h3>TEGNOLOGIA MODERNA</h3>
               <p class="details__text">
                 Usamos herramientas innovadoras para resolver las tareas
@@ -136,7 +138,7 @@
         <div class="container">
           <h2 class="section-h2">A que nos dedicamos</h2>
           <ul class="picture">
-            <li>
+            <li class="picture__img">
               <img
                 src="./img/esctiorio.jpg"
                 width="373"
@@ -148,7 +150,7 @@
                 </p>
               </div>
             </li>
-            <li>
+            <li class="picture__img">
               <img
                 src="./img/celular.jpg"
                 width="373"
@@ -160,7 +162,7 @@
                 </p>
               </div>
             </li>
-            <li>
+            <li class="picture__img">
               <img
                 src="./img/tablet.jpg"
                 width="373"
@@ -277,7 +279,38 @@
           </div>
         </section>
     </main>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="18.67" height="18.67"><use href="./img/icoms.svg#icon-close"></use></svg>
+      </button>
+      <ul class="mobile-menu">
+        <li><a href="" class="link">Studio</a></li>
+        <li><a href="" class="link">Portfolio</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+      </ul>
+      <div >
+      <ul class="mobile-contact">
+        <li class="mobile__menu"><a class="mobile__tel" href="tel+1 212-772-4150">+1 212-772-4150</a></li>
+        <li class="mobile__mail"><a  href="mailto:info@example.com"></a>info@devstudio.com</li>
+      </ul>
+      <div>
+      <ul class="mobile-link">
+        <li class="mobile__link"><a>Instagram</a></li>
+        <li class="mobile__link"><a>Twitter</a></li>
+        <li class="mobile__link"><a>Facebook</a></li>
+        <li class="mobile__link"><a>Linkedin</a></li>
+      </ul>
+      </div>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
     </body>
     <footer>
       <div class="container container-footer">
