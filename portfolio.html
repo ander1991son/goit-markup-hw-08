@@ -48,6 +48,12 @@
           </li>
         </ul>
       </header>
+      <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg width="24" height="16"><use href="./img/icoms.svg#icon-menu_24px"></use></svg>
+        </button>
     </div>
     <main>
       <section class="filter">
@@ -220,6 +226,38 @@
         </section>
       </div>
     </main>
+     <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="18.67" height="18.67"><use href="./img/icoms.svg#icon-close"></use></svg>
+      </button>
+      <ul class="mobile-menu">
+        <li><a href="index.html" class="link">Studio</a></li>
+        <li><a href="portfolio.html" class="link">Portfolio</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+      </ul>
+      <div >
+      <ul class="mobile-contact">
+        <li class="mobile__menu"><a class="mobile__tel" href="tel+1 212-772-4150">+1 212-772-4150</a></li>
+        <li class="mobile__mail"><a  href="mailto:info@example.com"></a>info@devstudio.com</li>
+      </ul>
+      <div>
+      <ul class="mobile-link">
+        <li class="mobile__link"><a>Instagram</a></li>
+        <li class="mobile__link"><a>Twitter</a></li>
+        <li class="mobile__link"><a>Facebook</a></li>
+        <li class="mobile__link"><a>Linkedin</a></li>
+      </ul>
+      </div>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
   <footer>
     <div class="container container-footer">

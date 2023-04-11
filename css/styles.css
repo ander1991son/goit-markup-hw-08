@@ -854,19 +854,35 @@ h2 {
   width: 373px;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .menu-toggle {
     display: block;
     padding-right: 22px;
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
+  .nav-block {
+    border-bottom: solid 1px var(--grey-color);
+  }
   .nav-info {
     display: none;
   }
   .nav-logo {
     padding-left: 15px;
+    padding-bottom: 15px;
+  }
+  .nav-information {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .backdrop {
+    width: 480px;
+  }
+  .modal {
+    width: 400px;
   }
 }
 
@@ -874,18 +890,24 @@ h2 {
   .solution__h1 {
     width: 360px;
   }
+  .details-features {
+    padding-left: 8px;
+    width: 480px;
+  }
   .details__service {
     width: 100%;
-    padding-left: 100px;
+  }
+  .features__svg {
+    width: 450px;
   }
   .details__text {
-    width: 25%;
+    width: 450px;
   }
   h3 {
-    padding-left: 40px;
+    text-align: center;
   }
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .section-h2 {
     width: 40%;
   }
@@ -895,37 +917,37 @@ h2 {
   }
 }
 
-@media (max-width: 480px) {
-  .equipment {
-    width: 100%;
-    padding-left: 100px;
-  }
-  .equipment__name {
-    width: 20%;
-  }
-  .equipment__work {
-    width: 24%;
+@media screen and (max-width: 480px) {
+  img {
+    width: 450px;
+    height: 460px;
   }
   .equipment__icons {
-    justify-content: flex-start;
-    padding-left: 40px;
+    justify-content: center;
+    gap: 10px;
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .customers-h2 {
     width: 40%;
   }
   .customers {
     flex-wrap: wrap;
-    width: 35%;
-    margin: 30px;
+    width: 38%;
+    margin-bottom: 80px;
+    padding-left: 6px;
+  }
+  .customers__svg {
+    width: 210px;
+    height: 92px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .container-footer {
     flex-wrap: wrap;
+    width: 480px;
     height: 604px;
   }
   .footer-info {
@@ -945,10 +967,10 @@ h2 {
     width: 100%;
   }
   .networks-svg {
-    padding-left: 9%;
+    justify-content: center;
   }
   .h3-color {
-    width: 35%;
+    text-align: center;
   }
   .h3-section {
     width: 100%;
@@ -964,7 +986,19 @@ h2 {
 }
 
 @media screen and (max-width: 480px) {
-  .h3-section {
+  .section-mobile {
+    display: none;
+  }
+  .filters {
+    flex-wrap: wrap;
+    width: 305px;
+  }
+  .picture {
+    width: 480px;
+    padding-left: 6px;
+  }
+  .picture__card {
+    width: 450px;
   }
 }
 
