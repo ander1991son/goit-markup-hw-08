@@ -81,11 +81,10 @@
                   <textarea name="comment" id="comment"  minlength="3" maxlength="100" rows="6" placeholder="Introdusca el texto" class="form__textarea">
                   </textarea>
                   </div>
-                  <div class="form-field-checkbox">
-                <label>
-                  <input type="checkbox" value="accept" class="form__checkbox">
-                  <svg class="form__checkbox__svg" width="16" height="15"><use href="./img/icoms.svg#icon-Vector"></use></svg>
-                  <span class="form__span">Estoy de acuerdo con el voletin informativo y acepto los terminos y condiciones</span>
+                  <div >
+                <label class="form-field-checkbox">
+                  <input type="checkbox" checked="checked" value="accept" class="form__checkbox">
+                    <span class="form__span">Estoy de acuerdo con el voletin informativo y acepto los <a href="" class="form__terms"> terminos y condiciones</a></span>
                 </label>
                   </div>
                   <div class="form-button">
@@ -281,27 +280,23 @@
     </main>
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg width="18.67" height="18.67"><use href="./img/icoms.svg#icon-close"></use></svg>
+        <svg width="18.67" height="18.67" class="wer"><use href="./img/icoms.svg#icon-close"></use></svg>
       </button>
       <ul class="mobile-menu">
         <li><a href="index.html" class="link">Studio</a></li>
         <li><a href="portfolio.html" class="link">Portfolio</a></li>
         <li><a href="" class="link">Contacts</a></li>
       </ul>
-      <div >
       <ul class="mobile-contact">
         <li class="mobile__menu"><a class="mobile__tel" href="tel+1 212-772-4150">+1 212-772-4150</a></li>
         <li class="mobile__mail"><a  href="mailto:info@example.com"></a>info@devstudio.com</li>
       </ul>
-      <div>
       <ul class="mobile-link">
         <li class="mobile__link"><a>Instagram</a></li>
         <li class="mobile__link"><a>Twitter</a></li>
         <li class="mobile__link"><a>Facebook</a></li>
         <li class="mobile__link"><a>Linkedin</a></li>
       </ul>
-      </div>
-      </div>
     </div>
     <script src="./js/modal.js"></script>
     <script
@@ -351,10 +346,12 @@
 </ul>
         </section>
         <section>
+          <div class="bulletin-position">
           <h3 class="h3-color h3-section">SUSCRIBACE AL BOLETIN INFORMATIVO</h3>
           <div class="bulletin">
           <iNput class="bulletin__informative" type="email" placeholder="Correo electronico"></iNput>
           <button class="form__button bulletin__button" type="submit">SUSCRIBACE <svg width="24" heigth="24"><use href="./img/icoms.svg#icon-avion"></use></svg></button>
+          </div>
           </div>
         </section>
         </div>
