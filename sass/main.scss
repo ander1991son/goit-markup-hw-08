@@ -1,6 +1,8 @@
-@import './utils/variables.scss';
-@import './components/nav';
-@import './components/partial/generics.scss';
-@import './components/section.scss';
+@import './components/variables.scss';
+
+@import './components/generic.scss';
+@import './components/modal.scss';
+@import './components/sections.scss';
 @import './components/footer.scss';
-@import './components/main.portfolio.scss';
+@import './components/mobil.scss';
+@import './components/tablet.scss';

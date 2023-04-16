@@ -1,0 +1,158 @@
+@media screen and (max-width: 480px) {
+  .menu-toggle {
+    display: block;
+    padding-right: 22px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-block {
+    border-bottom: solid 1px $grey-color;
+    width: 480px;
+  }
+  .nav-info {
+    display: none;
+  }
+  .nav-logo {
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+  .nav-information {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .backdrop {
+    width: 480px;
+  }
+  .modal {
+    width: 450px;
+    top: 20%;
+    left: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .solution__h1 {
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .details-features {
+    width: 480px;
+  }
+  .details__service {
+    width: 450px;
+  }
+  .features__svg {
+    width: 450px;
+  }
+  .details__text {
+    width: 450px;
+  }
+  h3 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-h2 {
+    width: 40%;
+  }
+  .picture__img {
+    width: 100%;
+    padding-left: 55px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  img {
+    width: 450px;
+    height: 460px;
+  }
+  .equipment__icons {
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .customers-h2 {
+    width: 40%;
+  }
+  .customers {
+    flex-wrap: wrap;
+    width: 39%;
+    margin-bottom: 80px;
+    padding-left: 12px;
+  }
+  .customers__svg {
+    width: 210px;
+    height: 92px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container-footer {
+    flex-wrap: wrap;
+    width: 480px;
+    height: 604px;
+  }
+  .footer-info {
+    width: 100%;
+  }
+  .footer-logo {
+    padding-left: 170px;
+  }
+  .footer-information {
+    padding: 0;
+    padding-left: 60px;
+  }
+  .footer__contact {
+    padding-left: 100px;
+  }
+  .networks {
+    width: 100%;
+  }
+  .networks-svg {
+    justify-content: center;
+  }
+  .h3-color {
+    text-align: center;
+  }
+  .bulletin__informative {
+    width: 450px;
+  }
+  .bulletin-position {
+    position: unset;
+  }
+  .bulletin {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-mobile {
+    display: none;
+  }
+  .filters {
+    flex-wrap: wrap;
+    width: 305px;
+  }
+  .picture {
+    width: 480px;
+  }
+  .equipment {
+    width: 450px;
+  }
+  .picture__card {
+    width: 450px;
+  }
+  .card-animation {
+    width: 450px;
+    height: 404px;
+  }
+}

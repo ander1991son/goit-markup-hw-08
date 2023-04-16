@@ -44,10 +44,24 @@ address {
   margin: 0;
 }
 
-/* Custom */
 .navigation {
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-}/*# sourceMappingURL=partial.css.map */
+}
+/* Custom */
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $black-color;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background-color: $white-color;
+  margin: 0;
+}

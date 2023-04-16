@@ -2,11 +2,11 @@
   display: flex;
   justify-content: space-between;
 }
-.nav-block .nav-flex {
+.nav-flex {
   display: flex;
   gap: 93px;
 }
-.nav-block .nav-flex .nav-logo {
+.nav-logo {
   text-decoration: none;
   color: rgb(33, 150, 243);
   font-size: 26px;
@@ -15,17 +15,17 @@
   padding-top: 25px;
   display: flex;
 }
-.nav-block .nav-flex .nav-info {
+.nav-info {
   position: relative;
   padding: 32px 0;
   margin: 0;
   display: flex;
   gap: 50px;
 }
-.nav-block .nav-flex .nav-info .li-after {
+.li-after {
   position: relative;
 }
-.nav-block .nav-flex .nav-info .nav__link {
+.nav__link {
   text-decoration: none;
   color: rgb(33, 33, 33);
   line-height: 16.41px;
@@ -34,13 +34,13 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-block .nav-flex .nav-info .nav__link:hover {
+.nav__link:hover {
   color: rgb(33, 150, 243);
 }
-.nav-block .nav-flex .nav-info .nav__color {
+.nav__color {
   color: rgb(33, 150, 243);
 }
-.nav-block .div-after {
+.div-after {
   bottom: -1px;
   left: 0;
   top: 43px;
@@ -51,13 +51,13 @@
   position: absolute;
   background-color: rgb(33, 150, 243);
 }
-.nav-block .nav-information {
+.nav-information {
   padding: 32px 0 32px 0;
   margin: 0;
   display: flex;
   gap: 50px;
 }
-.nav-block .nav-information .nav__contact {
+.nav__contact {
   display: flex;
   gap: 10px;
   text-decoration: none;
@@ -68,13 +68,13 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-block .nav-information .nav__contact:hover {
+.nav__contact:hover {
   color: rgb(33, 150, 243);
 }
-.nav-block .nav-information .nav__contact:hover svg {
+.nav__contact:hover svg {
   fill: rgb(33, 150, 243);
 }
-.nav-block .nav-information .nav__svg {
+.nav__svg {
   fill: rgb(117, 117, 117);
 }
 
@@ -138,7 +138,7 @@ address {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: rgb(33, 33, 33);
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -383,7 +383,7 @@ textarea {
   display: flex;
   justify-content: center;
 }
-.form-button .form__button {
+.form__button {
   width: 200px;
   height: 50px;
 }
@@ -392,16 +392,17 @@ textarea {
   display: flex;
   gap: 30px;
 }
-.features .features__svg {
+.features__svg {
   background-color: rgb(245, 244, 250);
   border-radius: 4px;
   width: 270px;
   height: 120px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.features .features__tecno {
+.features__tecno {
   border-radius: 4px;
   width: 70px;
   height: 70px;
@@ -409,12 +410,12 @@ textarea {
 
 .details-features {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   gap: 30px;
 }
 .details-features .details__service {
   width: 270px;
-  height: 120px;
   display: flex;
   flex-direction: column;
 }
@@ -714,4 +715,4 @@ footer {
 .card-animation .card__text {
   padding: 63px 24px;
   color: rgb(255, 255, 255);
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
