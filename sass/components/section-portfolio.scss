@@ -1,0 +1,72 @@
+.filter {
+  display: flex;
+  justify-content: center;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  padding-bottom: 56px;
+  padding-top: 112px;
+  border-radius: 4px;
+}
+
+.filters__button {
+  color: $black-color;
+  background: rgba(245, 244, 250, 1);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+.filters__button:hover {
+  color: $blue-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.picture__card {
+  height: 404px;
+  border: 1px solid rgba(238, 238, 238, 1);
+  overflow: hidden;
+  position: relative;
+}
+
+.picture__card:hover .card-animation {
+  top: 0;
+  margin: 0;
+  cursor: pointer;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.picture__h2 {
+  padding-left: 24px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.picture__link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  color: $grey-color;
+  text-decoration: none;
+  padding-left: 24px;
+}
+
+.card-animation {
+  width: 370px;
+  margin-top: 40px;
+  background-color: rgba(33, 150, 243, 0.9);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  position: absolute;
+}
+
+.card__text {
+  padding: 63px 24px;
+  color: $white-color;
+}

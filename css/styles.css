@@ -972,6 +972,7 @@ h2 {
 @media screen and (max-width: 768px) {
   .picture__height {
     height: 294px;
+    width: 354px;
   }
 }
 
@@ -1120,6 +1121,10 @@ h2 {
   .filters {
     flex-wrap: wrap;
     width: 305px;
+  }
+  .picture__height {
+    width: 450px;
+    height: 294px;
   }
   .picture {
     width: 480px;
