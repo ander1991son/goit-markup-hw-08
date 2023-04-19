@@ -979,6 +979,13 @@ h2 {
 /*fin*/
 
 @media screen and (max-width: 480px) {
+  .container {
+    width: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .menu-toggle {
     display: block;
     padding-right: 22px;
@@ -1008,7 +1015,7 @@ h2 {
   }
   .modal {
     width: 450px;
-    top: 20%;
+    top: 50%;
     left: 50%;
   }
 }
@@ -1039,7 +1046,7 @@ h2 {
 
 @media screen and (max-width: 480px) {
   .section-h2 {
-    width: 40%;
+    width: 480px;
   }
   .picture__img {
     width: 100%;
@@ -1060,11 +1067,11 @@ h2 {
 
 @media screen and (max-width: 480px) {
   .customers-h2 {
-    width: 40%;
+    width: 480px;
   }
   .customers {
     flex-wrap: wrap;
-    width: 39%;
+    width: 480px;
     margin-bottom: 80px;
     padding-left: 12px;
   }
@@ -1138,6 +1145,12 @@ h2 {
   .card-animation {
     width: 450px;
     height: 404px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bg {
+    width: calc(480px - 400px);
   }
 }
 
