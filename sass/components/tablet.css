@@ -15,8 +15,6 @@
 @media screen and (max-width: 768px) {
   .modal {
     width: 450px;
-    top: 38%;
-    left: 33%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -108,4 +106,4 @@
     height: 294px;
     width: 354px;
   }
-}/*# sourceMappingURL=tablet.css.map */
+} /*# sourceMappingURL=tablet.css.map */
